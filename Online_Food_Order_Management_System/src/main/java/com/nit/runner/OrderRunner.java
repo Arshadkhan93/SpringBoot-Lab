@@ -49,6 +49,34 @@ public class OrderRunner implements CommandLineRunner
 				Double pricePerItem = Double.parseDouble(IO.readln("Enter Price Per Item: "));
 				controller.save(new FoodOrder(id, customerName, foodItem, quantity, pricePerItem, pricePerItem));			
 			}
+			case 2->
+			{
+				
+			}
+			case 3->
+			{
+				
+			}
+			case 4->
+			{
+				
+			}
+			case 5->
+			{
+				
+			}
+			case 6->
+			{
+				
+			}
+			case 7->
+			{
+				
+			}
+			case 8->
+			{
+				
+			}
 			}
 		}
 		
