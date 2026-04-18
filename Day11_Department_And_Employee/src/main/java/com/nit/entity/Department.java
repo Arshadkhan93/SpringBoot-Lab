@@ -8,6 +8,7 @@ import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,6 +17,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@Table(name = "Dept11")
 public class Department {
 	
 	@Id
@@ -23,7 +25,7 @@ public class Department {
 	@Column(length = 20)
 	String deptName;
 	@ElementCollection
-	@CollectionTable(name = "Employee" , joinColumns = @JoinColumn(name = "id") )
+	@CollectionTable(name = "Employee11" , joinColumns = @JoinColumn(name = "id") )
 	List<Employee> employees;
 
 }
